@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MCL_VERSION=ce4ab47
+MCL_VERSION=ae9f946
 # Exit if any error occured
 set -euxo pipefail
 
@@ -12,8 +12,8 @@ chmod +x ./mcl-installer
 mkdir app && cd app
 # 安装临时的 fix-protocol-version 插件
 mkdir plugins
-wget https://github.com/cssxsh/fix-protocol-version/releases/download/v1.3.0/fix-protocol-version-1.3.0.mirai2.jar -O plugins/fix-protocol-version-1.3.0.mirai2.jar
-wget https://github.com/MrXiaoM/mirai-console-dev-qrlogin/releases/download/0.1.1/mirai-console-dev-qrlogin-0.1.1.jar -O plugins/mirai-console-dev-qrlogin-0.1.1.jar
+wget https://github.com/cssxsh/fix-protocol-version/releases/download/v1.7.0/fix-protocol-version-1.7.0.mirai2.jar -O plugins/fix-protocol-version-1.7.0.mirai2.jar
+wget https://github.com/MrXiaoM/mirai-console-dev-qrlogin/releases/download/0.1.8/mirai-console-dev-qrlogin-0.1.8.jar -O plugins/mirai-console-dev-qrlogin-0.1.8.jar
 
 "../mcl-installer" << EOF
 N
